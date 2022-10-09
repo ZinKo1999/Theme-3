@@ -411,11 +411,10 @@ fieldset[disabled] .btn-primary.active {
     height: 75px;
     line-height: 75px;
     transition: background 0.2s;
-  
   }
   
   .cybr-btn:hover {
-    --primary: yellow;
+    --primary: rgb(224, 224, 0);
   }
   .cybr-btn:active {
     --primary: yellow;
@@ -550,6 +549,7 @@ fieldset[disabled] .btn-primary.active {
     position: relative;
     color: black;
     clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+    margin-top: 20px;
   }
 
 
