@@ -1,105 +1,365 @@
 <!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {margin:0;height:2000px;}
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="ZYm29pYWPnCXGOvt2MIkft_NPEmksyl5Tww7YvnZ_nA" />
+
+  <title>Website Builder Myanmar</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+ 
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fullpage">
+    <!-- Navigation -->
+     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+        <div class="contain">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#home">
+                  <div id="name"> </div>
+              
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="">
+                        <a class="page-scroll" href="#home">Home</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section id="home">
+        <div class="contain">
+          <div class="hero">
+            <div class="leftSection">
+              <h1 class="heading" id="nameinhero"></h1>
+              <h2 class="myjob" id="job"></h2>
+              <p class="paragraph" id="aboutme"></p>
+              <a href="" id="contactme" class="contact-button">Contact Me</a>
 
 
-
-
-.icon-bar {
-  color: white;
- position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: black;
-  font-size: 20px;
-}
-
-.icon-bar a:hover {
-  background-color: #2c2c2c;
-  color: white;
-}
-
-.facebook {
-  background: ;
-  color: black;
+              <div class="social-links-hero">
+                <div class="icon-bar">
+                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+                </div>
+    
+              </div>
+            </div>
+                  <!--person photo-->
+            <img src="images/person.jpg" class="person_image" />
+          </div>
+        </div>
+    </section>
   
-}
+  
+  
+    <!-- Portfolio Grid Section -->
+    <section id="gallery" class="bg-light-gray">
+        <div class="contain">
+            <div class="popup">
+              <h2 class="gallerytext">GALLERY</h2>
+              <!--Portfolio Images-->
+              <div class="row">
+                <div class="column">
+                  <a href="images/gallery/01.jpg" target="_blank"><img src="images/gallery/01.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/01~1.jpg" target="_blank"><img src="images/gallery/01~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
 
-.twitter {
-  background: ;
-  color: black;
-}
+                  <a href="images/gallery/04.jpg" target="_blank"><img src="images/gallery/04.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/04~1.jpg" target="_blank"><img src="images/gallery/04~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
 
-.google {
-  background: ;
-  color: black;
-}
+                  <a href="images/gallery/07.jpg" target="_blank"><img src="images/gallery/07.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/07~1.jpg" target="_blank"><img src="images/gallery/07~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
 
-.linkedin {
-  background: ;
-  color: black;
-}
+                  <a href="images/gallery/10.jpg" target="_blank"><img src="images/gallery/10.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/10~1.jpg" target="_blank"><img src="images/gallery/10~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
 
-.youtube {
-  background:;
-  color: black;
-}
+                  <a href="images/gallery/13.jpg" target="_blank"><img src="images/gallery/13.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/13~1.jpg" target="_blank"><img src="images/gallery/13~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
 
-.content {
-  margin-left: 75px;
-  font-size: 30px;
-}
+                  <a href="images/gallery/16.jpg" target="_blank"><img src="images/gallery/16.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/16~1.jpg" target="_blank"><img src="images/gallery/16~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
 
-@media screen and (max-width: 1000px){
-.icon-bar {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color: black;
-  position: static;
-  top: 0%;
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
-}
-}
+                  <a href="images/gallery/19.jpg" target="_blank"><img src="images/gallery/19.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/19~1.jpg" target="_blank"><img src="images/gallery/19~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
 
-</style>
-<body>
+                  <a href="images/gallery/22.jpg" target="_blank"><img src="images/gallery/22.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/22~1.jpg" target="_blank"><img src="images/gallery/22~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/25.jpg" target="_blank"><img src="images/gallery/25.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/25~1.jpg" target="_blank"><img src="images/gallery/25~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/28.jpg" target="_blank"><img src="images/gallery/28.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/28~1.jpg" target="_blank"><img src="images/gallery/28~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/31.jpg" target="_blank"><img src="images/gallery/31.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/31~1.jpg" target="_blank"><img src="images/gallery/31~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/34.jpg" target="_blank"><img src="images/gallery/34.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/34~1.jpg" target="_blank"><img src="images/gallery/34~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/37.jpg" target="_blank"><img src="images/gallery/37.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/37~1.jpg" target="_blank"><img src="images/gallery/37~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/40.jpg" target="_blank"><img src="images/gallery/40.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/40~1.jpg" target="_blank"><img src="images/gallery/40~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/43.jpg" target="_blank"><img src="images/gallery/43.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/43~1.jpg" target="_blank"><img src="images/gallery/43~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/46.jpg" target="_blank"><img src="images/gallery/46.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/46~1.jpg" target="_blank"><img src="images/gallery/46~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/49.jpg" target="_blank"><img src="images/gallery/49.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/49~1.jpg" target="_blank"><img src="images/gallery/49~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                </div>
+                <div class="column">
+                  <a href="images/gallery/02.jpg" target="_blank"><img src="images/gallery/02.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/02~1.jpg" target="_blank"><img src="images/gallery/02~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/05.jpg" target="_blank"><img src="images/gallery/05.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/05~1.jpg" target="_blank"><img src="images/gallery/05~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/08.jpg" target="_blank"><img src="images/gallery/08.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/08~1.jpg" target="_blank"><img src="images/gallery/08~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/11.jpg" target="_blank"><img src="images/gallery/11.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/11~1.jpg" target="_blank"><img src="images/gallery/11~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/14.jpg" target="_blank"><img src="images/gallery/14.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/14~1.jpg" target="_blank"><img src="images/gallery/14~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/17.jpg" target="_blank"><img src="images/gallery/17.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/17~1.jpg" target="_blank"><img src="images/gallery/17~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/20.jpg" target="_blank"><img src="images/gallery/20.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/20~1.jpg" target="_blank"><img src="images/gallery/20~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/23.jpg" target="_blank"><img src="images/gallery/23.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/23~1.jpg" target="_blank"><img src="images/gallery/23~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/26.jpg" target="_blank"><img src="images/gallery/26.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/26~1.jpg" target="_blank"><img src="images/gallery/26~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/29.jpg" target="_blank"><img src="images/gallery/29.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/29~1.jpg" target="_blank"><img src="images/gallery/29~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/32.jpg" target="_blank"><img src="images/gallery/32.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/32~1.jpg" target="_blank"><img src="images/gallery/32~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/35.jpg" target="_blank"><img src="images/gallery/35.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/35~1.jpg" target="_blank"><img src="images/gallery/35~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/38.jpg" target="_blank"><img src="images/gallery/38.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/38~1.jpg" target="_blank"><img src="images/gallery/38~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/41.jpg" target="_blank"><img src="images/gallery/41.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/41~1.jpg" target="_blank"><img src="images/gallery/41~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/44.jpg" target="_blank"><img src="images/gallery/44.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/44~1.jpg" target="_blank"><img src="images/gallery/44~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/47.jpg" target="_blank"><img src="images/gallery/47.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/47~1.jpg" target="_blank"><img src="images/gallery/47~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/50.jpg" target="_blank"><img src="images/gallery/50.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/50~1.jpg" target="_blank"><img src="images/gallery/50~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                </div>
+                <div class="column">
+                  <a href="images/gallery/03.jpg" target="_blank"><img src="images/gallery/03.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/03~1.jpg" target="_blank"><img src="images/gallery/03~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/06.jpg" target="_blank"><img src="images/gallery/06.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/06~1.jpg" target="_blank"><img src="images/gallery/06~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/09.jpg" target="_blank"><img src="images/gallery/09.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/09~1.jpg" target="_blank"><img src="images/gallery/09~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/12.jpg" target="_blank"><img src="images/gallery/12.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>\
+                  <a href="images/gallery/12~1.jpg" target="_blank"><img src="images/gallery/12~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/15.jpg" target="_blank"><img src="images/gallery/15.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/15~1.jpg" target="_blank"><img src="images/gallery/15~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/28.jpg" target="_blank"><img src="images/gallery/18.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/28~1.jpg" target="_blank"><img src="images/gallery/18~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/21.jpg" target="_blank"><img src="images/gallery/21.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/21~1.jpg" target="_blank"><img src="images/gallery/21~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/24.jpg" target="_blank"><img src="images/gallery/24.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/24~1.jpg" target="_blank"><img src="images/gallery/24~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/27.jpg" target="_blank"><img src="images/gallery/27.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/27~1.jpg" target="_blank"><img src="images/gallery/27~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/30.jpg" target="_blank"><img src="images/gallery/30.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/30~1.jpg" target="_blank"><img src="images/gallery/30~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/33.jpg" target="_blank"><img src="images/gallery/33.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/33~1.jpg" target="_blank"><img src="images/gallery/33~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/36.jpg" target="_blank"><img src="images/gallery/36.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/36~1.jpg" target="_blank"><img src="images/gallery/36~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/39.jpg" target="_blank"><img src="images/gallery/39.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/39~1.jpg" target="_blank"><img src="images/gallery/39~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/42.jpg" target="_blank"><img src="images/gallery/42.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/42~1.jpg" target="_blank"><img src="images/gallery/42~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/45.jpg" target="_blank"><img src="images/gallery/45.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/45~1.jpg" target="_blank"><img src="images/gallery/45~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+
+                  <a href="images/gallery/48.jpg" target="_blank"><img src="images/gallery/48.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                  <a href="images/gallery/48~1.jpg" target="_blank"><img src="images/gallery/48~1.jpg" alt="Image" loading="lazy" onerror='this.style.display = "none"'></a>
+                </div>
+              </div>
+              </div>
+              <div class="imageshow">
+                <div class="overlay"></div>
+                <div class="img-show">
+                  <span><b>X</b></span>
+                  <img src="">
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="skills">
+        <div class="contain">
+         <div class="skillsection">
+          <div class="skillcontainer">
+            <h2 class="skillstext">My Skills</h2>
+            <div class="grid-row">
+              <div id="skill1" class="skillcard">
+                <!-- will fill with JS -->
+              </div>
+              <div id="skill2" class="skillcard">
+                <!-- will fill with JS -->
+              </div>
+              <div id="skill3" class="skillcard">
+                <!-- will fill with JS -->
+              </div>
+              <div id="skill4" class="skillcard">
+                <!-- will fill with JS -->
+              </div>
+              <div id="skill5" class="skillcard">
+                <!-- will fill with JS -->
+              </div>
+              <div id="skill6" class="skillcard">
+                <!-- will fill with JS -->
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
 
 
 
-<div class="content">
-  <h3>Sticky Social Bar</h3>
-  <p>The sticky social bar will stick to the screen when you scroll.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
+    <!-- Clients Aside -->
+   
 
-<div class="icon-bar">
-  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-  <a href="#" class="google"><i class="fa fa-google"></i></a> 
-  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
-</div>
+    <section id="contact">
+        <div class="contain">
+             <footer>
+                <div class="footer-container">
+                  <div class="footer-left">
+                    <span class="name"><div id="footername"> </div></span>
+                    <p class="copyright">All rights reserved &copy; <script>document.write(new Date().getFullYear())</script></p>
+                  </div>
+                  <div class="footer-middle">
+                    <p class="header">Links</p>
+                    <a href="#home">Home</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                  </div>
+                  <div class="footer-right">
+                    <div class="header">Social Links</div>
+                    <div class="social-container">
+                      <div class="groupOne social-group">
+                        <a href="" id="facebook" class="social-link">
+                          <i class="fa fa-facebook-official icon" aria-hidden="true"></i>
+                          <p>Facebook</p>
+                        </a>
+                        <a href="" id="instagram" class="social-link">
+                          <i class="fa fa-instagram icon" aria-hidden="true"></i>
+                          <p>Instagram</p>
+                        </a>
+                        <a href="" id="email" class="social-link">
+                          <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                          <p>Email</p>
+                        </a>
+                      </div>
+                      <div class="groupTwo social-group">
+                        <a href="" id="twitter" class="social-link">
+                          <i class="fa fa-twitter icon" aria-hidden="true"></i>
+                          <p>Twitter</p>
+                        </a>
+                        <a href="" id="telegram" class="social-link">
+                          <i class="fa fa-telegram icon" aria-hidden="true"></i>
+                          <p>Telegram</p>
+                        </a>
+                        <div class="social-link">
+                          <i id="phone" class="fa fa-phone icon" aria-hidden="true"></i>
+                          <p>+959 234 123 881</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+        </div>
+    </section>
+
+  
+  
+  
+
+  
+  
+
+  <script src="https://use.fontawesome.com/edbf31e27f.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 
 </body>
-</html> 
+</html>
+
+
