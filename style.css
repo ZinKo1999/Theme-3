@@ -349,7 +349,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 
-.contactbut{
+/* .contactbut{
     margin-top: 15px;
 }
 
@@ -377,7 +377,7 @@ fieldset[disabled] .btn-primary.active {
   text-decoration: none;
 }
 
-
+ */
 
 
 /*-----------Contact Me-----------*/
@@ -390,15 +390,15 @@ fieldset[disabled] .btn-primary.active {
 
 .cybr-btn {
     --primary: yellow;
-    --shadow-primary: yellow;
+    --shadow-primary: rgb(255, 0, 0);
     --primary-hue: 0;
     --primary-lightness: 50;
     --color: black;
     --font-size: 26px;
     --shadow-primary-hue: 180;
     --label-size: 9px;
-    --shadow-secondary-hue: yellow;
-    --shadow-secondary: yellow;
+    --shadow-secondary-hue: rgb(0, 26, 255);
+    --shadow-secondary: rgb(0, 81, 255);
     --clip: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);;
     --border: 4px;
     --shimmy-distance: 5;
@@ -419,7 +419,6 @@ fieldset[disabled] .btn-primary.active {
     letter-spacing: 2px;
     position: relative;
     font-weight: 700;
-    font-size: 3rem;
     border: 0;
     min-width: 300px;
     height: 75px;
@@ -432,7 +431,7 @@ fieldset[disabled] .btn-primary.active {
     --primary: yellow;
   }
   .cybr-btn:active {
-    --primary: yellow;
+    --primary: rgb(255, 255, 0);
   }
   
   .cybr-btn:after,
@@ -443,7 +442,8 @@ fieldset[disabled] .btn-primary.active {
     left: 0;
     right: 0;
     bottom: 0;
-    clip-path: var(--clip);
+    -webkit-clip-path: var(--clip);
+            clip-path: var(--clip);
     z-index: -1;
       align-items: center;
     justify-content: center;
@@ -471,8 +471,10 @@ fieldset[disabled] .btn-primary.active {
     bottom: calc(var(--border) * -1);
     background: var(--shadow-primary);
     text-shadow: 2px 2px var(--shadow-primary), -2px -2px var(--shadow-secondary);
-    clip-path: var(--clip);
-    animation: glitch 2s infinite;
+    -webkit-clip-path: var(--clip);
+            clip-path: var(--clip);
+    -webkit-animation: glitch 2s infinite;
+            animation: glitch 2s infinite;
     display: none;
   }
   
@@ -487,69 +489,161 @@ fieldset[disabled] .btn-primary.active {
     right: calc(var(--border) * 1);
     bottom: calc(var(--border) * 1);
     left: calc(var(--border) * 1);
-    clip-path: var(--clip);
+    -webkit-clip-path: var(--clip);
+            clip-path: var(--clip);
     background: var(--primary);
     z-index: -1;
   }
   
-  @keyframes glitch {
+  @-webkit-keyframes glitch {
     0% {
-      clip-path: var(--clip-one);
+      -webkit-clip-path: var(--clip-one);
+              clip-path: var(--clip-one);
     }
     2%, 8% {
-      clip-path: var(--clip-two);
+      -webkit-clip-path: var(--clip-two);
+              clip-path: var(--clip-two);
       transform: translate(calc(var(--shimmy-distance) * -1%), 0);
     }
     6% {
-      clip-path: var(--clip-two);
+      -webkit-clip-path: var(--clip-two);
+              clip-path: var(--clip-two);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
     9% {
-      clip-path: var(--clip-two);
+      -webkit-clip-path: var(--clip-two);
+              clip-path: var(--clip-two);
       transform: translate(0, 0);
     }
     10% {
-      clip-path: var(--clip-three);
+      -webkit-clip-path: var(--clip-three);
+              clip-path: var(--clip-three);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
     13% {
-      clip-path: var(--clip-three);
+      -webkit-clip-path: var(--clip-three);
+              clip-path: var(--clip-three);
       transform: translate(0, 0);
     }
     14%, 21% {
-      clip-path: var(--clip-four);
+      -webkit-clip-path: var(--clip-four);
+              clip-path: var(--clip-four);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
     25% {
-      clip-path: var(--clip-five);
+      -webkit-clip-path: var(--clip-five);
+              clip-path: var(--clip-five);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
     30% {
-      clip-path: var(--clip-five);
+      -webkit-clip-path: var(--clip-five);
+              clip-path: var(--clip-five);
       transform: translate(calc(var(--shimmy-distance) * -1%), 0);
     }
     35%, 45% {
-      clip-path: var(--clip-six);
+      -webkit-clip-path: var(--clip-six);
+              clip-path: var(--clip-six);
       transform: translate(calc(var(--shimmy-distance) * -1%));
     }
     40% {
-      clip-path: var(--clip-six);
+      -webkit-clip-path: var(--clip-six);
+              clip-path: var(--clip-six);
       transform: translate(calc(var(--shimmy-distance) * 1%));
     }
     50% {
-      clip-path: var(--clip-six);
+      -webkit-clip-path: var(--clip-six);
+              clip-path: var(--clip-six);
       transform: translate(0, 0);
     }
     55% {
-      clip-path: var(--clip-seven);
+      -webkit-clip-path: var(--clip-seven);
+              clip-path: var(--clip-seven);
       transform: translate(calc(var(--shimmy-distance) * 1%), 0);
     }
     60% {
-      clip-path: var(--clip-seven);
+      -webkit-clip-path: var(--clip-seven);
+              clip-path: var(--clip-seven);
       transform: translate(0, 0);
     }
     31%, 61%, 100% {
-      clip-path: var(--clip-four);
+      -webkit-clip-path: var(--clip-four);
+              clip-path: var(--clip-four);
+    }
+  }
+  
+  @keyframes glitch {
+    0% {
+      -webkit-clip-path: var(--clip-one);
+              clip-path: var(--clip-one);
+    }
+    2%, 8% {
+      -webkit-clip-path: var(--clip-two);
+              clip-path: var(--clip-two);
+      transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+    }
+    6% {
+      -webkit-clip-path: var(--clip-two);
+              clip-path: var(--clip-two);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    9% {
+      -webkit-clip-path: var(--clip-two);
+              clip-path: var(--clip-two);
+      transform: translate(0, 0);
+    }
+    10% {
+      -webkit-clip-path: var(--clip-three);
+              clip-path: var(--clip-three);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    13% {
+      -webkit-clip-path: var(--clip-three);
+              clip-path: var(--clip-three);
+      transform: translate(0, 0);
+    }
+    14%, 21% {
+      -webkit-clip-path: var(--clip-four);
+              clip-path: var(--clip-four);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    25% {
+      -webkit-clip-path: var(--clip-five);
+              clip-path: var(--clip-five);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    30% {
+      -webkit-clip-path: var(--clip-five);
+              clip-path: var(--clip-five);
+      transform: translate(calc(var(--shimmy-distance) * -1%), 0);
+    }
+    35%, 45% {
+      -webkit-clip-path: var(--clip-six);
+              clip-path: var(--clip-six);
+      transform: translate(calc(var(--shimmy-distance) * -1%));
+    }
+    40% {
+      -webkit-clip-path: var(--clip-six);
+              clip-path: var(--clip-six);
+      transform: translate(calc(var(--shimmy-distance) * 1%));
+    }
+    50% {
+      -webkit-clip-path: var(--clip-six);
+              clip-path: var(--clip-six);
+      transform: translate(0, 0);
+    }
+    55% {
+      -webkit-clip-path: var(--clip-seven);
+              clip-path: var(--clip-seven);
+      transform: translate(calc(var(--shimmy-distance) * 1%), 0);
+    }
+    60% {
+      -webkit-clip-path: var(--clip-seven);
+              clip-path: var(--clip-seven);
+      transform: translate(0, 0);
+    }
+    31%, 61%, 100% {
+      -webkit-clip-path: var(--clip-four);
+              clip-path: var(--clip-four);
     }
   }
   
@@ -563,7 +657,8 @@ fieldset[disabled] .btn-primary.active {
     background-color: black;
     position: relative;
     color: black;
-    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+    -webkit-clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+            clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
   }
 
 
@@ -1208,7 +1303,7 @@ fieldset[disabled] .btn-primary.active {
     padding: 16px;
     transition: all 0.3s ease;
     color: rgb(255, 251, 0);
-    font-size: 20px;
+    font-size: 30px;
   }
   
   .icon-bar a:hover {
