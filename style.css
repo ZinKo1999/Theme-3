@@ -1180,7 +1180,7 @@ fieldset[disabled] .btn-primary.active {
 
 .footer-left .copyright {
 	font-size: 1.3rem;
-  color: rgb(160, 126, 160);
+  color: rgb(168, 158, 43);
 }
 
 .footer-middle {
@@ -1206,14 +1206,14 @@ fieldset[disabled] .btn-primary.active {
 .footer-middle a {
 	font-style: normal;
 	text-decoration: none;
-	color: rgb(235, 186, 235);
+	color: rgb(255, 251, 202);
 	font-size: 2rem;
 	gap: 0.5rem;
 	cursor: pointer;
 }
 
 .footer-middle a:hover {
-	color: rgb(247, 89, 247);
+	color: rgb(255, 234, 0);
 }
 
 .footer-right {
@@ -1249,7 +1249,7 @@ fieldset[disabled] .btn-primary.active {
 	align-items: center;
 	font-style: normal;
 	text-decoration: none;
-	color: rgb(235, 186, 235);
+	color: rgb(255, 251, 202);
 	font-size: 2rem;
 	gap: 0.5rem;
 }
@@ -1260,7 +1260,7 @@ fieldset[disabled] .btn-primary.active {
 
 .social-link:hover {
 	cursor: pointer;
-	color: rgb(247, 89, 247);
+	color: rgb(255, 234, 0);
   text-decoration: none;
 }
 
