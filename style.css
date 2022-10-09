@@ -7,7 +7,17 @@
  */
 
  body{
-    background-color: #2c2c2c;
+    background: rgb(0,17,48);
+    background-image: url("images/bg.png");
+    
+}
+
+.one {
+  width: 300px;
+}
+
+    /* background: rgb(56,47,106);
+    background: radial-gradient(circle, rgba(56,47,106,1) 0%, rgba(12,11,22,1) 100%); */
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
@@ -20,9 +30,17 @@
     }
   }
 
+  @media screen and (max-width:560px){
+    body{
+    padding-top: 60px;
+    }
+  }
+
  :root {
   --font-family: 'Poppins', cursive;
   --maincolor: #1a1a1a;
+  --neonshadowcolor: 0 0 20px #b701ff;
+  --neoncolor: #eb50ff;
 }
 
 
@@ -247,7 +265,7 @@ fieldset[disabled] .btn-primary.active {
 
 
 .hero {
-	height: 800px;
+	height: 900px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -292,6 +310,31 @@ fieldset[disabled] .btn-primary.active {
 	padding: 7rem;
 	flex: 1;
 }
+
+.rightSection {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+.borderhero{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: double;
+    border-width: 5px;
+    border-color: var(--neoncolor);
+    box-shadow: var(--neonshadowcolor);
+
+}
+
+.contactbut{
+    margin-top: 10px;
+}
+
 
 .contact-button {
 	align-self: flex-start;
@@ -346,26 +389,34 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .person_image {
-	width: 20%;
-  min-width: 300px;
-
-	height: auto;
-  max-width: 100%;
+	width: 50rem;
+	height: 50rem;
+	border-radius: 0;
 	object-fit: cover;
-	object-position: center;
-	flex: 1;
-	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    object-position: center;
+
+    
 }
 
-@media (min-width: 900px) {
-	.person_image {
-		-webkit-clip-path: polygon(31% 0, 100% 0%, 100% 100%, 0% 100%);
-		clip-path: polygon(31% 0, 100% 0%, 100% 100%, 0% 100%);
-	}
+@media screen and (max-width: 900px){
+    .person_image {
+        width: 40rem;
+        height: 40rem;
+        border-radius: 0;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
-
+@media screen and (max-width: 600px){
+    .person_image {
+        width: 30rem;
+        height: 30rem;
+        border-radius: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+}
 
 @media screen and (max-width: 1000px) {
   .heading {
@@ -424,9 +475,6 @@ fieldset[disabled] .btn-primary.active {
 
 /*-----------------*/
 
-.bg-light-gray{
-  background-color: #ebedec;
-}
 
 
 @media screen and (max-width: 1025px){
@@ -434,7 +482,7 @@ fieldset[disabled] .btn-primary.active {
       text-align: center;
       padding-left: 20px;
       padding-right: 20px;
-      background-color: #ebedec;
+      ;
 	  }
 }
 @media screen and (min-width: 1025px){
@@ -903,32 +951,9 @@ fieldset[disabled] .btn-primary.active {
     color: #2c2c2c;
   }
   
-  .facebook {
-  
-    color: black;
+  .iconhero{
     
   }
-  
-  .twitter {
-  
-    color: black;
-  }
-  
-  .google {
-  
-    color: black;
-  }
-  
-  .linkedin {
-  
-    color: black;
-  }
-  
-  .youtube {
-  
-    color: black;
-  }
-  
 
   
   @media screen and (max-width: 1000px){
