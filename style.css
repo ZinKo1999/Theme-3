@@ -411,7 +411,6 @@ fieldset[disabled] .btn-primary.active {
     object-position: center; */
 	*width: 20%;
     min-width: 300px;
-
 	height: auto;
     max-width: 100%;
 	object-fit: cover;
