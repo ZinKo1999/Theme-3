@@ -420,13 +420,10 @@ fieldset[disabled] .btn-primary.active {
 	flex: 1;
 }
 
-@media screen and (max-width: 900px){
+/* @media screen and (max-width: 900px){
     .person_image {
         width: 40rem;
         height: 40rem;
-        border-radius: 0;
-        object-fit: cover;
-        object-position: center;
     }
 }
 
@@ -434,11 +431,8 @@ fieldset[disabled] .btn-primary.active {
     .person_image {
         width: 30rem;
         height: 30rem;
-        border-radius: 0;
-        object-fit: cover;
-        object-position: center;
     }
-}
+} */
 
 @media screen and (max-width: 1000px) {
   .heading {
