@@ -320,6 +320,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .borderhero{
+    
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -328,8 +329,21 @@ fieldset[disabled] .btn-primary.active {
     border-width: 5px;
     border-color: var(--neoncolor);
     box-shadow: var(--neonshadowcolor);
-
+    margin-left: 70px;
 }
+
+@media screen and (max-width: 1500px){
+    .borderhero{
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .borderhero{
+        margin-left: 0px;
+    }
+}
+
 
 .contactbut{
     margin-top: 10px;
