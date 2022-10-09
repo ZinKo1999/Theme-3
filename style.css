@@ -1,10 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 /*!
  * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
+
+ 
+ :root {
+    --font-family: 'Gemunu Libre', cursive;
+    --maincolor: #fbff00;
+    --neonshadowcolor: 0 0 20px #b701ff;
+    --neoncolor: #eb50ff;
+  }
+
+
+
+
+
 
  body{
     background: rgb(0,17,48);
@@ -36,12 +50,6 @@
     }
   }
 
- :root {
-  --font-family: 'Poppins', cursive;
-  --maincolor: #fbff00;
-  --neonshadowcolor: 0 0 20px #b701ff;
-  --neoncolor: #eb50ff;
-}
 
 
 
@@ -82,7 +90,7 @@ a.active {
 .btn-primary {
     border-color: var(--maincolor);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
     color: #fff;
     background-color: var(--maincolor);
@@ -136,9 +144,10 @@ fieldset[disabled] .btn-primary.active {
 
 .navbar-default .navbar-brand {
   color: var(--maincolor);
-  font-family: 'Staatliches', cursive;
-  font-weight: 500;
+  font-family: var(--font-family);
+  font-weight: 600;
 	font-size: 5rem;
+    text-transform: uppercase;
   padding-left: 50px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
@@ -166,7 +175,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: rgb(0, 0, 0);
 }
 
 .navbar-default .navbar-toggle:hover,
@@ -177,10 +186,10 @@ fieldset[disabled] .btn-primary.active {
 .navbar-default .nav li a {
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4); 
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: var(--font-family);
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     
 }
 
@@ -192,19 +201,19 @@ fieldset[disabled] .btn-primary.active {
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
+    color: rgb(0, 0, 0);
     background-color: var(--maincolor);
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
+    color: rgb(0, 0, 0);
     background-color: var(--maincolor);
 }
 
 
 .navbar{
-  font-family: 'Staatliches';
+  font-family: var(--font-family);
 }
 
 .navbar-default.navbar-shrink {
@@ -231,7 +240,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .navbar-default {
-        font-size: 2.5em;
+        font-size: 3rem;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -247,7 +256,7 @@ fieldset[disabled] .btn-primary.active {
     }
 
     .navbar-default.navbar-shrink {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 }
 
@@ -271,7 +280,7 @@ fieldset[disabled] .btn-primary.active {
 	flex-wrap: wrap;
 	font-style: bold;
 	font-display: swap;
-	font-family: 'Staatliches', cursive;
+	font-family: var(--font-family);
     color: #ffffff;
 }
 
@@ -287,12 +296,13 @@ fieldset[disabled] .btn-primary.active {
   font-weight: 800;
 	display: inline;
   margin-bottom: 25px;
+  text-transform: uppercase;
 }
 
 .myjob{
   font-size: 5rem;
   font-weight: 500;
-  color: #328EFF;
+  color: #fbff00;
   margin-bottom: 15px;
 }
 
@@ -375,7 +385,10 @@ fieldset[disabled] .btn-primary.active {
   
   
   
-  .cybr-btn {
+  
+
+
+.cybr-btn {
     --primary: yellow;
     --shadow-primary: yellow;
     --primary-hue: 0;
@@ -396,7 +409,7 @@ fieldset[disabled] .btn-primary.active {
     --clip-five: polygon(0 0, 100% 0, 100% 0, 95% 0, 95% 0, 85% 0, 85% 0, 8% 0, 0 0);
     --clip-six: polygon(0 40%, 100% 40%, 100% 85%, 95% 85%, 95% 85%, 85% 85%, 85% 85%, 8% 85%, 0 70%);
     --clip-seven: polygon(0 63%, 100% 63%, 100% 80%, 95% 80%, 95% 80%, 85% 80%, 85% 80%, 8% 80%, 0 70%);
-    font-family: 'Cyber', sans-serif;
+    font-family: var(--font-family);
     color: var(--color);
     cursor: pointer;
     background: transparent;
@@ -405,16 +418,18 @@ fieldset[disabled] .btn-primary.active {
     outline: transparent;
     letter-spacing: 2px;
     position: relative;
-    font-weight: 720;
+    font-weight: 700;
+    font-size: 3rem;
     border: 0;
     min-width: 300px;
     height: 75px;
     line-height: 75px;
     transition: background 0.2s;
+  
   }
   
   .cybr-btn:hover {
-    --primary: rgb(224, 224, 0);
+    --primary: yellow;
   }
   .cybr-btn:active {
     --primary: yellow;
@@ -549,9 +564,7 @@ fieldset[disabled] .btn-primary.active {
     position: relative;
     color: black;
     clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
-    margin-top: 20px;
   }
-
 
 
 
@@ -640,7 +653,6 @@ fieldset[disabled] .btn-primary.active {
   .heading {
     font-weight: 800;
     font-size: 4.5rem;
-    text-decoration: underline;
     display: inline;
     margin-bottom: 0px;
   }
@@ -664,7 +676,6 @@ fieldset[disabled] .btn-primary.active {
   .heading {
     font-weight: 500;
     font-size: 4rem;
-    text-decoration: underline;
     display: inline;
   }
 
@@ -782,7 +793,7 @@ fieldset[disabled] .btn-primary.active {
     cursor: pointer;
     text-shadow: 0.5px 0.5px #ffffff;
     font-size: 25px;
-    font-family: 'Helvetica';
+    font-family: var(--font-family);
     font-weight: 10px;
 }
 
@@ -828,12 +839,12 @@ fieldset[disabled] .btn-primary.active {
   margin-bottom: 30px;
   text-align:center;
   text-decoration: underline;
-  text-decoration-color:#328EFF;
+  text-decoration-color:#fbff00;
   font-size: 6rem;
-  background: -webkit-linear-gradient(#328EFF, #1F84FF);
+  background: -webkit-linear-gradient(#fbff00, #fbff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Staatliches', cursive;
+  font-family: var(--font-family);
 }
 
 @media screen and (max-width: 700px) {
@@ -947,7 +958,7 @@ fieldset[disabled] .btn-primary.active {
 } 
 
 .grid-row .grid-item h3 {
-  font-family: 'Staatliches', cursive;
+  font-family: var(--font-family);
   font-size: 30px;
   margin-bottom: 20px;
 }
@@ -1008,13 +1019,13 @@ fieldset[disabled] .btn-primary.active {
     *padding-bottom: 10px;
   }
   .grid-row .grid-item h3 {
-    font-family: 'Staatliches', cursive;
+    font-family: var(--font-family);
     font-size: 15px;
     margin-bottom: 10px;
   }
 
   .grid-row .grid-item {
-    font-family: 'Staatliches', cursive;
+    font-family: var(--font-family);
 
     border-radius: 10px;
     height: 120px;
@@ -1069,12 +1080,12 @@ fieldset[disabled] .btn-primary.active {
 .footer-left .name {
 	font-size: 4rem;
 	font-weight: bold;
-  color:rgb(246, 251, 255);
+  color:rgb(253, 246, 255);
 }
 
 .footer-left .copyright {
 	font-size: 1.3rem;
-  color: rgb(138, 155, 170);
+  color: rgb(160, 126, 160);
 }
 
 .footer-middle {
@@ -1088,26 +1099,26 @@ fieldset[disabled] .btn-primary.active {
 .footer-middle .header {
 	font-size: 2.5rem;
 	font-weight: bold;
-  color: rgb(246, 251, 255);
+  color: rgb(253, 246, 255);
 }
 
 .footer-right .header {
 	font-size: 2.5rem;
 	font-weight: bold;
-  color: rgb(246, 251, 255);
+  color: rgb(253, 246, 255);
 }
 
 .footer-middle a {
 	font-style: normal;
 	text-decoration: none;
-	color: rgb(175, 193, 209);
+	color: rgb(235, 186, 235);
 	font-size: 2rem;
 	gap: 0.5rem;
 	cursor: pointer;
 }
 
 .footer-middle a:hover {
-	color: rgb(255, 255, 255);
+	color: rgb(247, 89, 247);
 }
 
 .footer-right {
@@ -1143,7 +1154,7 @@ fieldset[disabled] .btn-primary.active {
 	align-items: center;
 	font-style: normal;
 	text-decoration: none;
-	color: rgb(175, 193, 209);
+	color: rgb(235, 186, 235);
 	font-size: 2rem;
 	gap: 0.5rem;
 }
@@ -1154,7 +1165,7 @@ fieldset[disabled] .btn-primary.active {
 
 .social-link:hover {
 	cursor: pointer;
-	color: rgb(255, 255, 255);
+	color: rgb(247, 89, 247);
   text-decoration: none;
 }
 
@@ -1181,7 +1192,7 @@ fieldset[disabled] .btn-primary.active {
   
   .icon-bar {
     
-    color: white;
+    color: rgb(176, 0, 211);
    position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -1196,13 +1207,13 @@ fieldset[disabled] .btn-primary.active {
     text-align: center;
     padding: 16px;
     transition: all 0.3s ease;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 251, 0);
     font-size: 20px;
   }
   
   .icon-bar a:hover {
-    background-color: #ffffff;
-    color: #2c2c2c;
+    background-color: #890096;
+    color: #ffffff;
   }
   
   .iconhero{
