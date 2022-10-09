@@ -14,7 +14,7 @@
 
 .one {
   width: 300px;
-}
+
 
     /* background: rgb(56,47,106);
     background: radial-gradient(circle, rgba(56,47,106,1) 0%, rgba(12,11,22,1) 100%); */
@@ -130,7 +130,7 @@ fieldset[disabled] .btn-primary.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: ;
+
 }
 
 
@@ -243,7 +243,7 @@ fieldset[disabled] .btn-primary.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: ;
+ 
     }
 
     .navbar-default.navbar-shrink {
@@ -272,7 +272,7 @@ fieldset[disabled] .btn-primary.active {
 	font-style: bold;
 	font-display: swap;
 	font-family: 'Staatliches', cursive;
-  color: #ffffff;
+    color: #ffffff;
 }
 
 @media screen and (min-width: 1024px){
@@ -311,13 +311,7 @@ fieldset[disabled] .btn-primary.active {
 	flex: 1;
 }
 
-.rightSection {
-	flex: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-    
-}
+
 
 .borderhero{
     
@@ -402,14 +396,28 @@ fieldset[disabled] .btn-primary.active {
 	color: #0d2b50;
 }
 
+.rightSection {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
+}
+
 .person_image {
-	width: 50rem;
+	/* width: 50rem;
 	height: 50rem;
 	border-radius: 0;
 	object-fit: cover;
-    object-position: center;
+    object-position: center; */
+	*width: 20%;
+    min-width: 300px;
 
-    
+	height: auto;
+    max-width: 100%;
+	object-fit: cover;
+	object-position: center;
+	flex: 1;
 }
 
 @media screen and (max-width: 900px){
