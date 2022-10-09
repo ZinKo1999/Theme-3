@@ -422,6 +422,7 @@ fieldset[disabled] .btn-primary.active {
 @media screen and (max-width: 700px){
     .person_image {
         border: 5px solid var(--neoncolor);
+        box-shadow: var(--neonshadowcolor);
     }
 }
 
