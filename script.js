@@ -1,6 +1,6 @@
 // 👇️ add data 👇️
 let username = "Aung Linn Khant";
-let usernameInNav ="Aung Linn Khant"; //add same username here if you want to show Username in Navbar
+let usernameInNav = username; //change  username  to  ""  if user want to add logo to navbar
 let job = "photographer";
 let aboutme = "I proved talented since young, studying arts at the local Arts School since 11 and by 15 was already using my first camera. Certified photographer from 2015, I am showing creativity and continuous improvement."
 let facebook = "";
@@ -21,6 +21,7 @@ let animation = "<div class='grid-item'> <span> <h3>Animation</h3> </span> <img 
 let architecture = "<div class='grid-item'> <span> <h3>Architecture</h3> </span> <img src='images/icons/Architecture.png'/> </div>";
 let contentwriting = "<div class='grid-item'> <span> <h3>Content Writing</h3> </span> <img src='images/icons/Content Writing.png'/> </div>";
 let creative = "<div class='grid-item'> <span> <h3>Creative</h3> </span> <img src='images/icons/Creative.png'/> </div>";
+let fashion = "<div class='grid-item'> <span> <h3>Fashion</h3> </span> <img src='images/icons/Fashion.png'/> </div>";
 let graphicdesign = "<div class='grid-item'> <span> <h3>Graphic Design</h3> </span> <img src='images/icons/Graphic Design.png'/> </div>";
 let illustration = "<div class='grid-item'> <span> <h3>Illustration</h3> </span> <img src='images/icons/Illustration.png'/> </div>";
 let jewelrydesign = "<div class='grid-item'> <span> <h3>Jewelry Design</h3> </span> <img src='images/icons/Jewelry Design.png'/> </div>";
